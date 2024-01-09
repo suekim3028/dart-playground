@@ -4,7 +4,7 @@ void main(List<String> arguments) {
   var a = "2"; // no type specification
   String b = "3";
   Object c = 2;
-  print(c);
+  print('$b a');
 
   // int variable = null;
   // print(variable);
