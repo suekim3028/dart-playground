@@ -3,17 +3,10 @@ import 'package:cli/cli.dart' as cli;
 enum Status { approved, pending, rejected }
 
 void main(List<String> arguments) {
-  Status s = Status.approved;
+  int a = addNumbers(1, 2);
+  print(a);
+}
 
-  switch (s) {
-    case Status.approved:
-      print("a");
-      break;
-    case Status.pending:
-      print("b");
-      break;
-    case Status.rejected:
-      print("c");
-      break;
-  }
+int addNumbers(int a, int b) {
+  return a + b;
 }
