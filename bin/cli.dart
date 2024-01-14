@@ -7,6 +7,9 @@ void main(List<String> arguments) {
   print(a);
 }
 
-int addNumbers({required int x, required int y, int z = 20, int? w}) {
+int addNumbers(int a, int b,
+    {required int x, required int y, int z = 20, int? w}) {
   return x + y + z + (w ?? 20);
 }
+
+int addNumbers2(int a, int b) => a + b;
