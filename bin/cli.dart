@@ -1,18 +1,18 @@
 import 'package:cli/cli.dart' as cli;
 
 void main(List<String> arguments) {
-  final Set<String> names = {"a", "a", "b"};
-  // print(names);
+  List<String> a = "abcd".split("");
+  print(a);
 
-  String name = "a";
-  switch (name) {
-    case "b":
-      print("a");
-      break;
-    case "a":
-      print("b");
-      break;
-    default:
-      print("c");
+  for (int i = 0; i < a.length; i++) {
+    print(a[i]);
+  }
+
+  for (String i in a) {
+    print(i);
+  }
+
+  do {
+    
   }
 }
