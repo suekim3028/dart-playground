@@ -7,6 +7,6 @@ void main(List<String> arguments) {
   print(a);
 }
 
-int addNumbers(int a, int b, [int? c, int? d]) {
-  return a + b + (c ?? 0);
+int addNumbers(int a, int b, [int c = 10, int d = 30]) {
+  return a + b + c;
 }
