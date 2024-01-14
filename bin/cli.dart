@@ -14,4 +14,9 @@ void main(List<String> arguments) {
   print(dict);
 
   dict.addAll({"2": 3, "c": 2});
+  dict.remove("c");
+  print(dict);
+
+  print(dict.keys);
+  print(dict.values);
 }
