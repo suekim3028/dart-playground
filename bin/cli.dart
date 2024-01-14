@@ -1,18 +1,19 @@
 import 'package:cli/cli.dart' as cli;
 
+enum Status { approved, pending, rejected }
+
 void main(List<String> arguments) {
-  List<String> a = "abcd".split("");
-  print(a);
+  Status s = Status.approved;
 
-  for (int i = 0; i < a.length; i++) {
-    print(a[i]);
-  }
-
-  for (String i in a) {
-    print(i);
-  }
-
-  do {
-    
+  switch (s) {
+    case Status.approved:
+      print("a");
+      break;
+    case Status.pending:
+      print("b");
+      break;
+    case Status.rejected:
+      print("c");
+      break;
   }
 }
